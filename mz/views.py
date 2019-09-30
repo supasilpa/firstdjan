@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 def indexpage(request):
-    return HttpResponse("welcome to my index page")
+    return render(request,'index.html')
 def contactpage(request):
-    return HttpResponse("welcome to contact Page")
+    return render(request,'contact1.html')
 def homepage(request):
-    return HttpResponse("welcome to my home page")
+    return render(request,'home.html')
