@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-   <h1>MCA student</h1> 
-</body>
-</html>
+
+  {% extends 'base.html'%}
+  {% block myContent %}
+  
+  <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6 col-md-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, pariatur aut, porro dolores non aperiam perspiciatis asperiores ea in ipsa at praesentium modi fugit possimus tenetur ducimus provident ratione reprehenderit!
+ 
+            </div>
+            <div class="col col-12 col-sm-6 col-md-8">
+                 <table class="table">
+                         <tr>
+                             <td>student name</td>
+                             <td><input type="text" class="form-control"></td>
+                        </tr>
+                         <tr>
+                             <td>Roll no</td>
+                            <td><input type="text" class="form-control"></td>
+                         </tr>
+                         <tr>
+                             <td>admission no</td>
+                             <td> <input type="text" class="form-control"> </td>
+                         </tr>
+                         
+                         <tr>
+                            <td><Button class="btn btn-success">Submit</Button></td>
+                         </tr>
+                     </table>
+            </div>
+        </div>
+    </div>
+  {% endblock %}
